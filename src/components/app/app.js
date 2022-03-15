@@ -59,7 +59,6 @@ export default class App extends Component {
         todoData: newArr,
       }
     });
-    console.log('added', text)
   }
 
   onToggleCompleted = (id) => {
@@ -74,7 +73,6 @@ export default class App extends Component {
         todoData: newArray
       }
     })
-    console.log('Toggle completed', id)
   };
 
   onAllCompleted = () => {
@@ -101,7 +99,6 @@ export default class App extends Component {
         todoData: newArray
       }
     });
-    console.log('editing', id)
   };
 
   onEdit = (text, id) => {
@@ -116,7 +113,6 @@ export default class App extends Component {
         todoData: newArray
       }
     });
-    console.log('edited', text, id);
   };
 
   render() {

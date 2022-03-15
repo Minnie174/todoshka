@@ -1,1 +1,3 @@
-https://minnie174.github.io/todoshka/
+vercel
+
+vercel.com/minnie174/todo

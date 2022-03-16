@@ -21,7 +21,6 @@ export default class App extends Component {
   createTodoItem(label) {
     return {
       label,
-      timer: 0,
       time: `created ${formatDistanceToNow(new Date(), { addSuffix: true })}`,
       completed: false,
       id: this.maxId++,

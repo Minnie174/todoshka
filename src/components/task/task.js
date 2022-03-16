@@ -19,7 +19,7 @@ export default class Task extends Component {
         });
     };
     render() {
-        const { label, time, timer = 0, completed, isEdit, onDeleted, onToggleCompleted, onEditItem } = this.props;
+        const { label, time, completed, isEdit, onDeleted, onToggleCompleted, onEditItem } = this.props;
 
         let classNames = 'btn';
         if (completed) {
@@ -59,7 +59,6 @@ export default class Task extends Component {
                            onClick={onToggleCompleted}/>
                     <label>
                         <span className="description">{label}</span>
-                        <div>{timer}</div>
                         <span className="created">{time}</span>
                     </label>
                     <button className="icon icon-edit" onClick={onEditItem} />

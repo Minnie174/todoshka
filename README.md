@@ -1,3 +1,3 @@
 vercel
 
-vercel.com/minnie174/todo
+https://todo-minnie174.vercel.app/

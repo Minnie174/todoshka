@@ -7,7 +7,6 @@ export default class Task extends Component {
         label: ""
     }
     onEditChange = (e) => {
-        console.log(e.target.value)
         this.setState({
             label: e.target.value
         });
@@ -40,9 +39,9 @@ export default class Task extends Component {
                     <label>
                         <input className="edit"
                                type="text"
-                               placeholder="type"
-                               onChange={this.onEditChange}
+                               placeholder={label}
                                value={this.state.label}
+                               onChange={this.onEditChange}
                         />
                     </label>
                 </form>

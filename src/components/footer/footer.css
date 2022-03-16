@@ -33,3 +33,7 @@
 .todo-count strong {
     font-weight: 300;
 }
+
+/*.filters li button.selected:hover {*/
+/*    border-color: rgba(175, 47, 47, 0.2);*/
+/*}*/

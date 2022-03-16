@@ -12,9 +12,8 @@ export default class App extends Component {
 
   state = {
     todoData: [
-      this.createTodoItem("Completed task"),
-      this.createTodoItem("Editing task"),
-      this.createTodoItem("Active task"),
+      this.createTodoItem("task 1"),
+      this.createTodoItem("task 2"),
     ],
     filter: "all",
   };
@@ -22,6 +21,7 @@ export default class App extends Component {
   createTodoItem(label) {
     return {
       label,
+      timer: 0,
       time: `created ${formatDistanceToNow(new Date(), { addSuffix: true })}`,
       completed: false,
       id: this.maxId++,

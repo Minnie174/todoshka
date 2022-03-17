@@ -50,6 +50,10 @@ export default class Task extends Component {
         return t;
     };
 
+    componentWillUnmount() {
+        clearInterval(this.myInterval)
+    }
+
     render() {
         const { label, time, completed, isEdit, onDeleted, onToggleCompleted, onEditItem } = this.props;
 

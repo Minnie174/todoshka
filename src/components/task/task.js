@@ -96,8 +96,8 @@ export default class Task extends Component {
                     <label>
                         <span className="title">{label}</span>
                         <div className="description">
-                            <button className="icon icon-play" onClick={this.onTimer}></button>
-                            <button className="icon icon-pause" onClick={this.onPause}></button>
+                            <button type="button" className="icon icon-play" onClick={this.onTimer}></button>
+                            <button type="button" className="icon icon-pause" onClick={this.onPause}></button>
                             <span className="timer">{this.makeTimeReadable(this.state.timer)}</span>
                         </div>
                         <span className="created">{time}</span>

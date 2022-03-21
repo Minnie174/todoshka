@@ -4,7 +4,7 @@ import './task.css';
 
 export default class Task extends Component {
     state = {
-        label: ""
+        label: this.props.label
     }
     onEditChange = (e) => {
         this.setState({
